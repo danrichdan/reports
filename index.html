@@ -43,12 +43,29 @@
     </header>
     <main>
         <section id="title">
-            <div class="container">
+            <div class="container page-header">
                  <h2>User Story/Acceptance Criteria Report</h2>
             </div>
         </section>
         <section id="report-section">
-            <div class="table-responsive">
+            <div class="legend container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="label label-primary">S = Story</span>
+                            <span class="label label-primary">B = Bug</span>
+                            <span class="label label-primary">O = Other</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="label label-warning">NW = Needs Work</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span class="label label-success">PO = Product Owner</span>
+                            <span class="label label-success">QA = Quality Assurance</span>
+                            <span class="label label-success">O = Other Folks</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="table-responsive container-fluid">
                 <table class="table table-striped">
                     <tr>
                         <th>Date</th>
@@ -75,8 +92,9 @@
     <footer>
 
     </footer>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
