@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reports | Card Views</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>US AC Report</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Reports</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Table View </a></li>
+                        <li><a href="card-view.html">Card View</a></li>
+                        <li><a href="charts.html">Charts</a></li>     
+                        <li class="active"><a href="#">Inputs<span class="sr-only">(current)</span></a></li>             
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-->
+        </nav>
+    </header>
+    <main>
+    <section id="title">
+        <div class="container page-header">
+                <h2>User Story/Acceptance Criteria Report</h2>
+        </div>
+    </section>
+    <section id="form-section">
+        <div class="container">
+            <form>
+                <div class="row">
+                    <h3>Total projects and Good projects</h3>
+                    <div class="form-group col-md-4">
+                        <label for="total">Total</label>
+                        <input type="text" class="form-control" placeholder="Total" id="total">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="withBoth">With Both</label>
+                        <input type="text" class="form-control" placeholder="With Both" id="withBoth">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">  
+                    <h3>Story Needs Work</h3>                
+                    <div class="form-group col-md-4">
+                        <label for="storyProductOwner">Story (PO)</label>
+                        <input type="text" class="form-control" placeholder="Story (PO)" id="storyProductOwner">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="storyQualityAssurance">Story (QA)</label>
+                        <input type="text" class="form-control" placeholder="Story (QA)" id="storyQualityAssurance">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="storyOther">Story (Other)</label>
+                        <input type="text" class="form-control" placeholder="Story (Other)" id="storyother">
+                    </div>
+                </div>
+                <hr>
+                <div class="row"> 
+                    <h3>Bug Needs Work</h3>                 
+                    <div class="form-group col-md-4">
+                        <label for="bugProductOwner">Bug (PO)</label>
+                        <input type="text" class="form-control" placeholder="Bug (PO)" id="bugProductOwner">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="bugQualityAssurance">Bug (QA)</label>
+                        <input type="text" class="form-control" placeholder="Bug (QA)" id="bugQualityAssurance">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="bugOther">Bug (Other)</label>
+                        <input type="text" class="form-control" placeholder="Bug (Other)" id="bugOther">
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <h3>Other Issue-type Needs Work</h3>                  
+                    <div class="form-group col-md-4">
+                        <label for="otherProductOwner">Other (PO)</label>
+                        <input type="text" class="form-control" placeholder="Other (PO)" id="otherProductOwner">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="otherQualityAssurance">Other (QA)</label>
+                        <input type="text" class="form-control" placeholder="Other (QA)" id="otherQualityAssurance">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="otherOther">Other (Other)</label>
+                        <input type="text" class="form-control" placeholder="Other (Other)" id="otherOther">
+                    </div>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-success">Submit Data</button>
+                <button type="submit" class="btn btn-danger">Clear Fields</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Reports</p>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
