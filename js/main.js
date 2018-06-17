@@ -1,11 +1,13 @@
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyAGROH6-U67pLuqWwrXj1yeJrX3FvOYtaE",
-    authDomain: "report-90bc2.firebaseapp.com",
-    databaseURL: "https://report-90bc2.firebaseio.com",
-    projectId: "report-90bc2",
-    storageBucket: "report-90bc2.appspot.com",
-    messagingSenderId: "592265876787"
+
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+
 };
 firebase.initializeApp(config);
 
@@ -17,6 +19,7 @@ fbRef.ref('us-ac-report').on('value', function(snapshot){
     console.log(data[1].time);
     addValuesToDom(data);
 });
+
 
 //create dom elements
 function addValuesToDom(data) {
@@ -33,3 +36,6 @@ function addValuesToDom(data) {
 
 // consider more functions... one for appending, the other for creating dom elements
 // also consider an array of objects .. or an object of arrays
+
+// redo the db... name it the report name and then the next node should be a number, then add the name value keys
+
